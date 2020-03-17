@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Partage</title>
+
+    <style>
+        body {
+            max-width: 640px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding-bottom: 20px;
+            text-align: center;
+            border-bottom: 1px solid rebeccapurple;
+        }
+
+        header ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 0;
+        }
+
+        header ul ul {
+            margin-top: 12px;
+        }
+
+        header li {
+            list-style-type: none;
+        }
+
+        article:not(:last-of-type)::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 1px;
+            margin: 0 auto;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Ce que je peux proposer</h1>
+    <nav>
+        <ul>
+            <li>Mes bibliothèques et ludothèques</li>
+            <ul>
+                <li><a href="#livres">Livres</a></li>
+                <li><a href="#bd">BDs</a></li>
+                <li><a href="#enfants">Livres pour les plus jeunes</a></li>
+                <li><a href="#board">Jeux de société</a></li>
+                <li><a href="#video">Jeux vidéo</a></li>
+            </ul>
+        </ul>
+
+    </nav>
+</header>
+<main>
+    <section>
+        <article id="livres">
+            <h2>Livres</h2>
+            <a href="https://inventaire.io/inventory/newick">Tout est listé sur inventaire.io</a>
+            <p>Beaucoup de fantastique, science-fiction, mais pas que</p>
+        </article>
+        <article id="bd">
+            <h2>BD</h2>
+            <a href="https://www.bdphile.info/user/newick/series/">Tout est listé sur BDPhile</a>
+            <p>Une grosse moitié de comics mais peu de super-héros.</p>
+        </article>
+        <article id="enfants">
+            <h2>Bd et livres adaptés à un public plus jeune</h2>
+            <a href="https://www.bdphile.info/liste/album/40-pour-les-plus-jeunes">Tout est listé sur BDPhile</a>
+            <p>Globalement des Pico Bogue et les vieux fourneaux</p>
+        </article>
+        <article id="board">
+            <h2>Jeux de société</h2>
+            <ul>
+                <li>6 qui surprend</li>
+                <li>7 wonders - duel</li>
+                <li>Blanc manger coco - la pilule</li>
+                <li>Burger Quizz</li>
+                <li>Carcassonne</li>
+                <li>Citadelles</li>
+                <li>CodeNames</li>
+                <li>CodeNames - Duo</li>
+                <li>Compatibility</li>
+                <li>Concept</li>
+                <li>Decrypto</li>
+                <li>Dixit</li>
+                <li>Elixir</li>
+                <li>Explosive kitten</li>
+                <li>Flick'em up !</li>
+                <li>Gang of four</li>
+                <li>Guillotine</li>
+                <li>Jungle Speed</li>
+                <li>La guerre des moutons</li>
+                <li>Les aventuriers du rail - Europe</li>
+                <li>Les aventuriers du rail - Europa 1912 (Extension)</li>
+                <li>Les princes de Catane</li>
+                <li>Limite Limite</li>
+                <li>Linq</li>
+                <li>Mr Jack Pocket</li>
+                <li>Myrmes</li>
+                <li>Mysterium</li>
+                <li>Pandémie</li>
+                <li>Quand memes</li>
+                <li>Saboteur</li>
+                <li>Suspend</li>
+                <li>Time's up</li>
+                <li>Unlock - Mystery adventure</li>
+            </ul>
+        </article>
+        <article id="video">
+            <h2>Jeux vidéo</h2>
+            <h3>Pour XBox 360</h3>
+            <ul>
+                <li>Assassin's Creed: Brotherhood</li>
+                <li>Borderlands: The Pre-Sequel</li>
+                <li>Darksiders</li>
+                <li>Warhammer Spacemarine</li>
+                <li>Wolfenstein</li>
+            </ul>
+            <h3>Steam</h3>
+            <p>J'ai un compte avec une bibliothèque bien remplie, j'ai vu qu'il était possible de partager mais je
+                n'ai pas encore chercher comment faire. On peut en parler :)</p>
+        </article>
+    </section>
+</main>
+</body>
+</html>
