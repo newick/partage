@@ -11,6 +11,7 @@
         * {
             box-sizing: border-box;
         }
+
         body {
             width: 100%;
             max-width: 640px;
@@ -22,24 +23,39 @@
 
         header {
             padding-bottom: 20px;
-            text-align: center;
             border-bottom: 1px solid rebeccapurple;
         }
 
+        header h1 {
+            text-align: center;
+        }
+
         header ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             width: 100%;
             padding-left: 0;
         }
 
         header ul ul {
+            display: flex;
+            justify-content: space-between;
             margin-top: 12px;
         }
 
         header li {
             list-style-type: none;
+        }
+
+        nav > ul > li + li {
+            margin-top: 12px;
+        }
+
+        nav > ul > li + li::before {
+            content: "";
+            display: block;
+            width: 20%;
+            height: 1px;
+            margin-bottom: 12px;
+            background-color: darkgreen;
         }
 
         article:not(:last-of-type)::after {
@@ -54,19 +70,23 @@
 </head>
 <body>
 <header>
-    <h1>Ce que je peux proposer</h1>
+    <h1>Ce que l'on peut proposer</h1>
     <nav>
         <ul>
-            <li>Mes bibliothèques et ludothèques</li>
-            <ul>
-                <li><a href="#livres">Livres</a></li>
-                <li><a href="#bd">BDs</a></li>
-                <li><a href="#enfants">Livres pour les plus jeunes</a></li>
-                <li><a href="#board">Jeux de société</a></li>
-                <li><a href="#video">Jeux vidéo</a></li>
-            </ul>
-        </ul>
+            <li>Bibliothèques et ludothèques
 
+                <ul>
+                    <li><a href="#livres">Livres</a></li>
+                    <li><a href="#bd">BDs</a></li>
+                    <li><a href="#enfants">Livres pour les plus jeunes</a></li>
+                    <li><a href="#board">Jeux de société</a></li>
+                    <li><a href="#video">Jeux vidéo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#matos">Matériel divers</a>
+            </li>
+        </ul>
     </nav>
 </header>
 <main>
@@ -74,7 +94,7 @@
         <article id="livres">
             <h2>Livres</h2>
             <a href="https://inventaire.io/inventory/newick">Tout est listé sur inventaire.io</a>
-            <p>Beaucoup de fantastique, science-fiction, mais pas que</p>
+            <p>Beaucoup de fantastique, science-fiction, mais pas que.</p>
         </article>
         <article id="bd">
             <h2>BD</h2>
@@ -134,9 +154,13 @@
                 <li>Warhammer Spacemarine</li>
                 <li>Wolfenstein</li>
             </ul>
-            <h3>Steam</h3>
-            <p>J'ai un compte avec une bibliothèque bien remplie, j'ai vu qu'il était possible de partager mais je
-                n'ai pas encore chercher comment faire. On peut en parler :)</p>
+        </article>
+        <article id="matos">
+            <h2>Matériel divers</h2>
+            <ul>
+                <li>Gaufrier</li>
+                <li>Raclette</li>
+            </ul>
         </article>
     </section>
 </main>
