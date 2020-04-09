@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bons plans</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding-bottom: 20px;
+            border-bottom: 1px solid rebeccapurple;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        header ul {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        header ul ul {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+        }
+
+        header li {
+            list-style-type: none;
+        }
+
+        nav > ul > li + li {
+            margin-top: 12px;
+        }
+
+        nav > ul > li + li::before {
+            content: "";
+            display: block;
+            width: 20%;
+            height: 1px;
+            margin-bottom: 12px;
+            background-color: darkgreen;
+        }
+
+        article:not(:last-of-type)::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 1px;
+            margin: 0 auto;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Bons plans découverts</h1>
+    <nav>
+        <ul>
+            <li>Bibliothèques et ludothèques
+
+                <ul>
+                    <li><a href="#livres">Livres</a></li>
+                    <li><a href="#bd">BDs</a></li>
+                    <li><a href="#enfants">Livres pour les plus jeunes</a></li>
+                    <li><a href="#board">Jeux de société</a></li>
+                    <li><a href="#video">Jeux vidéo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#matos">Matériel divers</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <article>
+            <h2>Magasins ouverts</h2>
+            <ul>
+                <li><a href=""></a></li>
+            </ul>
+        </article>
+        <article>
+            <h2>Livraison</h2>
+        </article>
+        <article>
+            <h2>Drive</h2>
+            <ul>
+                <li>
+                    <h3>Réseau Inpact 34</h3>
+                    <dl>
+                        <dt>Date ?</dt>
+                        <dd>Les vendredis entre 10h et 13h</dd>
+
+                        <dt>Où ?</dt>
+                        <dd>Parking du Palais des sports « René Bougnol » (1000 Avenue du Val de Montferrand, 34090
+                            Montpellier)
+                        </dd>
+
+                        <dt>Quoi ?</dt>
+                        <dd>Salades, pain au levain cuit au four à bois, fromages,
+                            huîtres et moules, spirulines,
+                            jus de raisin, bières artisanales, tisanes, confitures, vins…
+                        </dd>
+
+                        <dt>Qui ?</dt>
+                        <dd>Une dizaine d’agriculteurs aidés par des associations du réseau Inpact 34 (FRCIVAM
+                            OCCITANIE, CIVAM BIO34, MARCHE PAYSAN…)
+                        </dd>
+
+                        <dt>Commander</dt>
+                        <dd><a href="http://solalim.civam-occitanie.fr/">http://solalim.civam-occitanie.fr/</a></dd>
+
+                        <dt>Source</dt>
+                        <dd>La dernière actualité sur <a href="http://www.inpact-occitanie.org/actualites.php">http
+                            ://www.inpact-occitanie.org/actualites.php</a></dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <h3>Brasseurs montpellierains</h3>
+                    <dl>
+                        <dt>Date ?</dt>
+                        <dd>Les vendredis entre 10h et 13h</dd>
+
+                        <dt>Où ?</dt>
+                        <dd>Parking du Palais des sports « René Bougnol » (1000 Avenue du Val de Montferrand, 34090
+                            Montpellier)
+                        </dd>
+
+                        <dt>Quoi ?</dt>
+                        <dd>Salades, pain au levain cuit au four à bois, fromages,
+                            huîtres et moules, spirulines,
+                            jus de raisin, bières artisanales, tisanes, confitures, vins…
+                        </dd>
+
+                        <dt>Qui ?</dt>
+                        <dd>Une dizaine d’agriculteurs aidés par des associations du réseau Inpact 34 (FRCIVAM
+                            OCCITANIE, CIVAM BIO34, MARCHE PAYSAN…)
+                        </dd>
+
+                        <dt>Commander</dt>
+                        <dd><a href="http://solalim.civam-occitanie.fr/">http://solalim.civam-occitanie.fr/</a></dd>
+
+                        <dt>Source</dt>
+                        <dd>La dernière actualité sur <a href="http://www.inpact-occitanie.org/actualites.php">http
+                            ://www.inpact-occitanie.org/actualites.php</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </article>
+    </section>
+</main>
+</body>
+</html>
